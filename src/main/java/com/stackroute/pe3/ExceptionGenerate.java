@@ -3,7 +3,6 @@ package com.stackroute.pe3;
 public class ExceptionGenerate {
     public static void main(String[] args) {
 
-
        // IndexOutOfBoundsException
         try{
             int arr[]=new int[3];
