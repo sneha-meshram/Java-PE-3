@@ -35,5 +35,4 @@ public class ExceptionGenerateTest {
         Exception.givenException(array);
 
     }
-
 }
