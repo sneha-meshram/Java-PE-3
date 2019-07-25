@@ -26,21 +26,22 @@ public class WordFrequencyTest {
 
     @Test
     public void givenStringCalculateFrequencyOfWords(){
-    String[] content=wordFrequency.readAllBytes("frequency.txt");
+   // String[] content=wordFrequency.readAllBytes("frequency.txt");
+       // String[] content={"i am a man i like to sleep i have a home"};
     String[] expectedResult= new String[]
             {
             "i = 2","am - 1","a - 2","man - 1","have-1","home - 1"
             };
     //act
-      String[] result=wordFrequency.calculateFrequency(content);
+      String[] result=wordFrequency.calculateFrequency(String[] content);
       //assert
         assertArrayEquals(expectedResult, result);
     }
 
     //the given file path is not present
 
-    @Test(expected = FileNotFoundException.class)
-    public void givenInputShouldCheckWrongFileName()
+   // @Test(expected = FileNotFoundException.class)
+    //public void givenInputShouldCheckWrongFileName()
     {
         wordFrequency.readAllBytes("test.text");
     }
